@@ -264,7 +264,9 @@ img{
                         border-radius: 4px;
                         position: relative;
                     }
-                    
+                    .form-control:disabled, .form-control[readonly]{
+                        background: #fff;
+                    }
                     &-icon{
                         position: absolute;
                         width: 16px;

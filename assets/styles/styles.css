@@ -303,6 +303,10 @@ img {
   position: relative;
 }
 
+.filter-popup-con .custom-range-filter-items .date-control-con .date-control .form-control:disabled, .filter-popup-con .custom-range-filter-items .date-control-con .date-control .form-control[readonly] {
+  background: #fff;
+}
+
 .filter-popup-con .custom-range-filter-items .date-control-con .date-control-icon {
   position: absolute;
   width: 16px;
