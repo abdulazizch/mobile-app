@@ -20,14 +20,15 @@ a, p,h1,h2,h3,h4,h5{
 }
 a{
     text-decoration: none;
-}
-a:focus{
-    text-decoration: none;
-    outline: none;
-    border: none;
+    &:focus, &:hover{
+        text-decoration: none;
+        outline: none;
+        border: none;
+    }
 }
 button.btn:focus{
     box-shadow: none;
+    display: block;
     -webkit-display: none;
 }
 img{
@@ -36,6 +37,9 @@ img{
     vertical-align: unset;
     object-fit: contain;
     object-position: center;
+}
+.form-control:focus{
+    box-shadow: none;
 }
 .main-wrapper{
     // max-width: 768px;
@@ -239,7 +243,10 @@ img{
         }
     }
     .custom-range-filter{
-
+        display: none;
+        &.show{
+            display: block;
+        }
         &-items{
             .date-control-con{
                 position: relative;
@@ -298,6 +305,10 @@ img{
 // datepicker-styles 
 .date-control-pannel{
     height: 350px;
+    display: none;
+    &.show{
+        display: block;
+    }
 
     .datepicker-calender-con{
         height: 90%;
@@ -350,4 +361,131 @@ img{
 
 .datepicker table tr td.active.active{
     background: $primaryBlue;
+}
+
+
+// Message details page styles 
+.message-header{
+    background: #FFFFFF;
+    border-bottom: 1px solid #D9D9D9;
+    box-shadow: 0px 16px 32px rgba(191, 191, 191, 0.15);
+
+    &-topbar{
+        &-title h5{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: $textDark;
+        }
+    }
+
+    &-profile-details{
+        .profile-image-con .profile-image{
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .profile-title{
+            h5{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: $textDark;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $textLight2;
+            }
+        }
+    }
+}
+
+.underline{
+    text-decoration: underline;
+}
+.message-body{
+    padding-bottom: 80px;
+    .message-type{
+        display: flex;
+        align-items: center;
+
+        &-icon{
+            width: 19px;
+            height: 19px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: $primaryBlue;
+            border: 1px solid #FFFFFF;
+            border-radius: 7px;
+        }
+        &-title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $primaryBlue;
+        }
+    }
+
+    .message-title{
+        h4{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: $textDark;
+        }
+    }
+    .message-content{
+        p{
+            color: $textDark;
+        }
+        p.message-content-heading{
+            font-weight: 600;
+            margin: 16px 0 6px;
+            color: $textDark;
+        }
+    }
+}
+.new-message-input-con{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+
+    .new-message-input{
+        position: relative;
+        z-index: 1;
+
+        .new-message-input-control{
+            height: 40px;
+            width: 100%;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 35px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            outline: none;
+            &:focus{
+                outline: none;
+            }
+            
+        }
+        .send-icon{
+            position: absolute;
+            right: 15px;
+            top: 57%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+    }
 }

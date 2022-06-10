@@ -67,7 +67,7 @@
                     <div class="messages pl-1">
                         
                         <div class="message">
-                            <a href="" class=" d-flex align-items-start">
+                            <a href="./message-details.html" class=" d-flex align-items-start">
                                 <div class="message-profile-icon-con mt-1">
                                     <div class="message-profile-icon-type">
                                         <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
@@ -316,7 +316,7 @@
                     </div>
                 </div>
 
-                <div hidden  class="custom-range-filter">
+                <div class="custom-range-filter">
                     <div class="filter-popup-title d-flex justify-content-between align-items-center">
                         <h5>Custom Range</h5>
                         <div class="filter-popup-close-btn">
@@ -327,7 +327,7 @@
                         <div class="date-control-con">
                             <label class="form-label">From</label>
                             <div class="date-control">
-                                <input type="text" class="form-control" name="" id="">
+                                <input type="text" class="form-control from-date-input" name="" id="">
                                 <div class="date-control-icon">
                                     <img class="w-100" src="./assets/images/icons/calender-blue.svg" alt="">
                                 </div>
@@ -337,7 +337,7 @@
                         <div class="date-control-con mt-2">
                             <label class="form-label">To</label>
                             <div class="date-control">
-                                <input type="text" class="form-control" name="" id="">
+                                <input type="text" class="form-control to-date-input" name="" id="">
                                 <div class="date-control-icon">
                                     <img class="w-100" src="./assets/images/icons/calender-blue.svg" alt="">
                                 </div>
@@ -346,7 +346,7 @@
                     </div>
                     <div class="row mx-0 custom-range-filter-btns py-2">
                         <div class="col-6 pl-0 pr-2">
-                            <button class="w-100 btn btn-cancel">Cancel</button>
+                            <button class="w-100 btn btn-cancel filter-popup-close-btn">Cancel</button>
                         </div>
                         <div class="col-6 pr-0 pl-1">
                             <button class="w-100 btn btn-save">Done</button>
@@ -356,30 +356,30 @@
                 </div>
 
                 
-                <div hidden class="from-date-pannel date-control-pannel">
+                <div class="from-date-pannel date-control-pannel">
                     <div class="filter-popup-title d-flex justify-content-between align-items-center">
                         <h5>From</h5>
                     </div>
                     <div class="datepicker-calender-con">
-                        <div class="datepicker h-100"></div>
+                        <div class="datepicker from-date h-100"></div>
                     </div>
                     <div class="row mx-0 custom-range-filter-btns py-2">
                         <div class="w-100">
-                            <button class="w-100 btn btn-save">Cancel</button>
+                            <button class="w-100 btn btn-save btn-date-cancel">Cancel</button>
                         </div>
                     </div>
                 </div>
                 
-                <div hidden   class="from-date-pannel date-control-pannel">
+                <div class="to-date-pannel date-control-pannel">
                     <div class="filter-popup-title d-flex justify-content-between align-items-center">
                         <h5>To</h5>
                     </div>
                     <div class="datepicker-calender-con">
-                        <div class="datepicker h-100"></div>
+                        <div class="datepicker to-date h-100"></div>
                     </div>
                     <div class="row mx-0 custom-range-filter-btns py-2">
                         <div class="w-100">
-                            <button class="w-100 btn btn-save">Cancel</button>
+                            <button class="w-100 btn btn-save btn-date-cancel">Cancel</button>
                         </div>
                     </div>
                 </div>

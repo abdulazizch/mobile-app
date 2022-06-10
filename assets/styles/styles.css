@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-a:focus {
+a:focus, a:hover {
   text-decoration: none;
   outline: none;
   border: none;
@@ -32,6 +32,7 @@ a:focus {
 button.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+  display: block;
   -webkit-display: none;
 }
 
@@ -43,6 +44,11 @@ img {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .main-wrapper {
@@ -270,6 +276,14 @@ img {
   color: #1A1A1A;
 }
 
+.filter-popup-con .custom-range-filter {
+  display: none;
+}
+
+.filter-popup-con .custom-range-filter.show {
+  display: block;
+}
+
 .filter-popup-con .custom-range-filter-items .date-control-con {
   position: relative;
 }
@@ -323,6 +337,11 @@ img {
 
 .date-control-pannel {
   height: 350px;
+  display: none;
+}
+
+.date-control-pannel.show {
+  display: block;
 }
 
 .date-control-pannel .datepicker-calender-con {
@@ -376,5 +395,141 @@ img {
 
 .datepicker table tr td.active.active {
   background: #2F7AE5;
+}
+
+.message-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #D9D9D9;
+  -webkit-box-shadow: 0px 16px 32px rgba(191, 191, 191, 0.15);
+          box-shadow: 0px 16px 32px rgba(191, 191, 191, 0.15);
+}
+
+.message-header-topbar-title h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1A1A;
+}
+
+.message-header-profile-details .profile-image-con .profile-image {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.message-header-profile-details .profile-title h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1A1A;
+}
+
+.message-header-profile-details .profile-title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #757575;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.message-body {
+  padding-bottom: 80px;
+}
+
+.message-body .message-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-body .message-type-icon {
+  width: 19px;
+  height: 19px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2F7AE5;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px;
+}
+
+.message-body .message-type-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2F7AE5;
+}
+
+.message-body .message-title h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1A1A1A;
+}
+
+.message-body .message-content p {
+  color: #1A1A1A;
+}
+
+.message-body .message-content p.message-content-heading {
+  font-weight: 600;
+  margin: 16px 0 6px;
+  color: #1A1A1A;
+}
+
+.new-message-input-con {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.new-message-input-con .new-message-input {
+  position: relative;
+  z-index: 1;
+}
+
+.new-message-input-con .new-message-input .new-message-input-control {
+  height: 40px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 35px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+}
+
+.new-message-input-con .new-message-input .new-message-input-control:focus {
+  outline: none;
+}
+
+.new-message-input-con .new-message-input .send-icon {
+  position: absolute;
+  right: 15px;
+  top: 57%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
 }
 /*# sourceMappingURL=styles.css.map */
