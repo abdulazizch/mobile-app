@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.textDark {
+  color: #1A1A1A;
+}
+
+a, p, h1, h2, h3, h4, h5 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+button.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: unset;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.main-wrapper {
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content-con {
+  max-height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.main-content-con::-webkit-scrollbar {
+  display: none;
+}
+
+.page-header-title h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+}
+
+.page-header .search-icon {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.filters-section .filters-con p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.filters-section .filters-con .filters .filter button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EEEEEE;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.filters-section .filters-con .filters .filter button:focus {
+  outline: none;
+  border: none;
+}
+
+.filters-section .filters-con .filters .filter-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.filters-section .filters-con .filters .filter span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1A1A;
+}
+
+.message {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.message-profile-icon-con {
+  position: relative;
+}
+
+.message-profile-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.message-profile-icon-type {
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2F7AE5;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  top: -5px;
+  left: -5px;
+}
+
+.message-content-con {
+  width: 88%;
+}
+
+@media screen and (max-width: 420px) {
+  .message-content-con {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .message-content-con {
+    width: 75%;
+  }
+}
+
+.message-title h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1A1A;
+}
+
+.message-title p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #757575;
+}
+
+.message-content p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.filter-popup-con {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+
+.filter-popup-con.show {
+  display: block;
+}
+
+.filter-popup-con .backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.filter-popup-con .filter-popup {
+  width: 100%;
+  min-height: 420px;
+  background: #fff;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.filter-popup-con .filter-popup.show {
+  bottom: 0;
+}
+
+.filter-popup-con .filter-popup-title h5 {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  color: #1A1A1A;
+}
+
+.filter-popup-con .filter-popup-close-btn button {
+  font-size: 32px;
+  color: #595959;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.filter-popup-con .filter-popup-close-btn button:focus {
+  border: none;
+  outline: none;
+}
+
+.filter-popup-con .filter-popup-content .date-filters-list {
+  list-style: none;
+}
+
+.filter-popup-con .filter-popup-content .date-filters-list li {
+  margin-bottom: 16px;
+}
+
+.filter-popup-con .filter-popup-content .date-filters-list a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1A1A1A;
+}
+
+.filter-popup-con .custom-range-filter-items .date-control-con {
+  position: relative;
+}
+
+.filter-popup-con .custom-range-filter-items .date-control-con label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #595959;
+}
+
+.filter-popup-con .custom-range-filter-items .date-control-con .date-control input.form-control {
+  height: 38px;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  position: relative;
+}
+
+.filter-popup-con .custom-range-filter-items .date-control-con .date-control-icon {
+  position: absolute;
+  width: 16px;
+  right: 10px;
+  bottom: 4px;
+}
+
+.filter-popup-con .custom-range-filter-btns {
+  width: calc(100% - 32px);
+  position: absolute;
+  bottom: 6px;
+  background: #fff;
+}
+
+.filter-popup-con .custom-range-filter-btns button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  background: transparent;
+}
+
+.filter-popup-con .custom-range-filter-btns button.btn-cancel {
+  border: 1px solid #2F7AE5;
+  color: #2F7AE5;
+}
+
+.filter-popup-con .custom-range-filter-btns button.btn-save {
+  background: #2F7AE5;
+  color: #ffffff;
+}
+
+.date-control-pannel {
+  height: 350px;
+}
+
+.date-control-pannel .datepicker-calender-con {
+  height: 90%;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker-days, .date-control-pannel .datepicker-calender-con .datepicker-months, .date-control-pannel .datepicker-calender-con .datepicker-years, .date-control-pannel .datepicker-calender-con .datepicker-decades, .date-control-pannel .datepicker-calender-con .datepicker-centuries {
+  width: 100%;
+  height: 100%;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker table {
+  width: 100%;
+  height: 100%;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker table .datepicker-switch {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker table th {
+  height: 42px;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker table th.prev, .date-control-pannel .datepicker-calender-con .datepicker table th.next {
+  margin-top: 8px;
+  height: 14px;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker table th.prev:hover, .date-control-pannel .datepicker-calender-con .datepicker table th.next:hover {
+  background: transparent;
+}
+
+.date-control-pannel .datepicker-calender-con .datepicker table td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  width: 40px;
+}
+
+.datepicker table tr td.active.active {
+  background: #2F7AE5;
+}
+/*# sourceMappingURL=styles.css.map */

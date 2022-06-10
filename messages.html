@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="./assets/bootstrap-4.0.0/css/bootstrap.min.css">
+
+    <!-- fonts style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- datepicker css  -->
+    <link rel="stylesheet" href="./assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <!-- custom styles  -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+    <title>Messages</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="main-content-con container px-3 pt-3">
+            <!-- header setion  -->
+            <div class="page-header d-flex align-items-center justify-content-between">
+                <div class="page-header-title py-1">
+                    <h3>Messages</h3>
+                </div>
+                <div class="searchbar-con">
+                    <span class="search-icon">
+                        <img class="" src="./assets/images/icons/search.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <!-- filters section  -->
+            <div class="filters-section mt-2">
+                <div class="filters-con d-flex align-items-center">
+                    <p class="textDark">Filter: </p>
+                    <div class="filters d-flex align-items-center ml-2">
+                        <div class="filter mx-1 ">
+                            <button class="btn-filter btn-date-filter py-1 px-2">
+                                <div class="filter-icon mr-1">
+                                    <img src="./assets/images/icons/date.svg" alt="">
+                                </div>
+                                <span>Date</span>
+                            </button>
+                        </div>
+                        <div class="filter mx-1 py-1 px-2">
+                            <button class="btn-filter btn-sender-filter py-1 px-2">
+                                <div class="filter-icon mr-1">
+                                    <img src="./assets/images/icons/date.svg" alt="">
+                                </div>
+                                <span>Sender</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- messages list section  -->
+            <div class="messages-section mt-1">
+                <div class="messages-list">
+                    <div class="messages pl-1">
+                        
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Jonathan Doe</h4>
+                                        <div class="message-time">
+                                            <p>5min</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>New Opprotunity: Hey there...</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Donald Faegan</h4>
+                                        <div class="message-time">
+                                            <p>1hr</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Would you happen to...</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Christopher James</h4>
+                                        <div class="message-time">
+                                            <p>9:30am</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Good morning to you 🌞</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>United Service Org</h4>
+                                        <div class="message-time">
+                                            <p>9:30am</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>The Tuesday meeting has been moved to Wednesday, January 5th. Pleease update your calendars.</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div> -->
+                            </a>
+                        </div>
+
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Freddy Vital</h4>
+                                        <div class="message-time">
+                                            <p>1w</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>What hours were you...</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Jonathan Doe</h4>
+                                        <div class="message-time">
+                                            <p>5min</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>New Opprotunity: Hey there...</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Donald Faegan</h4>
+                                        <div class="message-time">
+                                            <p>1hr</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Would you happen to...</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="message">
+                            <a href="" class=" d-flex align-items-start">
+                                <div class="message-profile-icon-con mt-1">
+                                    <div class="message-profile-icon-type">
+                                        <img class="w-50" src="./assets/images/icons/heart.svg" alt="">
+                                    </div>
+                                    <div class="message-profile-icon">
+                                        <img src="./assets/images/charles-etoroma-95UF6LXe-Lo-unsplash 3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="message-content-con pl-1">
+                                    <div class="message-title d-flex justify-content-between align-items-center">
+                                        <h4>Christopher James</h4>
+                                        <div class="message-time">
+                                            <p>9:30am</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Good morning to you 🌞</p>
+                                    </div>
+                                </div>
+                                <div class="message-open-btn ml-auto">
+                                    <img class="w-100" src="./assets/images/icons/chevron-right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+
+        <div class="filter-popup-con">
+            <div class="backdrop"></div>
+            <div class="filter-popup px-3 pt-3">
+                <div  class="filter-options">
+                    <div class="filter-popup-title d-flex justify-content-between align-items-center">
+                        <h5>Date</h5>
+                        <div class="filter-popup-close-btn">
+                           <button> &times;</button>
+                        </div>
+                    </div>
+                    <div class="filter-popup-content mt-3">
+                        <ul class="date-filters-list">
+                            <li><a href="">Today</a></li>
+                            <li><a href="">Yesterday</a></li>
+                            <li><a href="">This week</a></li>
+                            <li><a href="">This month</a></li>
+                            <li><a href="">Last month</a></li>
+                            <li><a href="">This year</a></li>
+                            <li><a href="">All time</a></li>
+                            <li><a href="" class="custom-range-link">Custom range</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div hidden  class="custom-range-filter">
+                    <div class="filter-popup-title d-flex justify-content-between align-items-center">
+                        <h5>Custom Range</h5>
+                        <div class="filter-popup-close-btn">
+                           <button> &times;</button>
+                        </div>
+                    </div>
+                    <div class="custom-range-filter-items">
+                        <div class="date-control-con">
+                            <label class="form-label">From</label>
+                            <div class="date-control">
+                                <input type="text" class="form-control" name="" id="">
+                                <div class="date-control-icon">
+                                    <img class="w-100" src="./assets/images/icons/calender-blue.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="date-control-con mt-2">
+                            <label class="form-label">To</label>
+                            <div class="date-control">
+                                <input type="text" class="form-control" name="" id="">
+                                <div class="date-control-icon">
+                                    <img class="w-100" src="./assets/images/icons/calender-blue.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 custom-range-filter-btns py-2">
+                        <div class="col-6 pl-0 pr-2">
+                            <button class="w-100 btn btn-cancel">Cancel</button>
+                        </div>
+                        <div class="col-6 pr-0 pl-1">
+                            <button class="w-100 btn btn-save">Done</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                <div hidden class="from-date-pannel date-control-pannel">
+                    <div class="filter-popup-title d-flex justify-content-between align-items-center">
+                        <h5>From</h5>
+                    </div>
+                    <div class="datepicker-calender-con">
+                        <div class="datepicker h-100"></div>
+                    </div>
+                    <div class="row mx-0 custom-range-filter-btns py-2">
+                        <div class="w-100">
+                            <button class="w-100 btn btn-save">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div hidden   class="from-date-pannel date-control-pannel">
+                    <div class="filter-popup-title d-flex justify-content-between align-items-center">
+                        <h5>To</h5>
+                    </div>
+                    <div class="datepicker-calender-con">
+                        <div class="datepicker h-100"></div>
+                    </div>
+                    <div class="row mx-0 custom-range-filter-btns py-2">
+                        <div class="w-100">
+                            <button class="w-100 btn btn-save">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jQuery-3.6.0.js"></script>
+    <script src="./assets/bootstrap-4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
